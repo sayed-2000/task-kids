@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/*Navbar Start*/
+.navbar {
+  background: #ffffff 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  opacity: 1;
+  /* ===== logo prand in Navbar =====*/
+  /*===== UL in Navbar =====*/
+  /*===== icons-ig=====*/
+}
+.navbar .container-fluid {
+  padding: 0 50px 0 80px;
+  display: flex;
+}
+.navbar .logo {
+  display: inline-block;
+  width: 101px;
+  height: 46px;
+  background: transparent url("../images/Kidsfun.png") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.navbar .navbar-collapse {
+  justify-content: space-around;
+  margin-left: 90px;
+}
+.navbar .navbar-collapse .nav-link {
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+}
+.navbar .navbar-collapse .active {
+  color: #f7d904;
+}
+.navbar .sopping, .navbar .search {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 18px;
+  opacity: 1;
+  background-color: #f7d904;
+  position: relative;
+  cursor: pointer;
+}
+.navbar .sopping::before, .navbar .search::before {
+  content: "";
+  background: transparent url("../images/shopping.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  border: 1px dashed #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.navbar .search {
+  background-color: #e02b1d;
+  margin-left: 5px;
+}
+.navbar .search::before {
+  background: transparent url("../images/Search.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*===== Media Query for phones in Navbar =====*/
+@media (max-width: 600px) {
+  .nav-link {
+    text-align: left !important;
+    padding: 0 10px;
+    width: 100%;
+  }
+}
+/*===== Media Query for tablets in Navbar =====*/
+@media (max-width: 992px) {
+  .navbar-collapse {
+    margin-top: 10px;
+  }
+  .nav-link {
+    margin-bottom: 5px;
+    background-color: #ebebeb;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .icons-ig {
+    display: none;
+  }
+}
+/* Navbar End*/
+/* Home Start */
+.parent {
+  height: calc(100vh - 61px);
+  background: url("../images/backgroound-1.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.parent .text {
+  position: absolute;
+  left: 0;
+  background: url("../images/backgrund-2.png") no-repeat;
+  width: 80%;
+  height: 100%;
+  padding: 0 40px;
+}
+.parent .text .content-text {
+  position: absolute;
+  top: 40%;
+  width: 45%;
+}
+.parent .text .content-text h1 {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #111111;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: -20px;
+}
+.parent .text .content-text p {
+  letter-spacing: 0px;
+  color: #7e7e7e;
+  opacity: 1;
+  font-size: 28px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.parent .text .effect-1 {
+  top: -123px;
+  left: 38p;
+}
+.parent .text .effect-2 {
+  top: 50px;
+  right: -80px;
+}
+.parent .text .same-effect {
+  position: absolute;
+}
+.parent .text .same-effect img {
+  width: 60px;
+}
+
+.main-input {
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  width: 401px;
+  height: 103px;
+  border-radius: 28px;
+  position: absolute;
+  top: 15px;
+  right: 130px;
+  opacity: 1;
+}
+.main-input .input {
+  margin: auto;
+  display: flex;
+  width: 85%;
+  height: 64px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border: 1px solid #f7d904;
+  color: #7e7e7e;
+}
+.main-input .input input {
+  width: 100%;
+  border: none;
+}
+.main-input .input input:focus {
+  outline: none;
+}
+
+/*===== Media Query for phones in Navbar =====*/
+@media (max-width: 600px) {
+  .parent {
+    background-attachment: fixed;
+  }
+  .parent .content-text {
+    text-align: center;
+    top: 70px !important;
+    width: 100% !important;
+  }
+  .parent h1 {
+    font-size: 30px !important;
+    text-align: center !important;
+  }
+}
+/*===== Media Query for tablets in Home =====*/
+@media (max-width: 992px) {
+  .parent .text {
+    background: none;
+  }
+  .parent .content-text {
+    text-align: center;
+    top: 70px !important;
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .parent h1 {
+    font-size: 30px !important;
+    text-align: center !important;
+  }
+  .same-effect {
+    display: none;
+  }
+}
+/* Home End */
+/*===== library =====*/
+.no-show {
+  display: none;
+}/*# sourceMappingURL=stiyle.css.map */
